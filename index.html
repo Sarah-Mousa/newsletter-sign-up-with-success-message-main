@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main class="newsletter">
+      <section class="newsletter__container">
+        <div class="newsletter__image">
+          <img
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt="illustration-sign-up-mobile Image"
+            class="responsive-image"
+          />
+        </div>
+        <div class="newsletter__content">
+          <h1 class="newsletter__title">Stay updated!</h1>
+          <p class="newsletter__description">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <div class="newsletter__details">
+            <div class="newsletter__details-item">
+              <img src="./assets/images/icon-list.svg" alt="Icon list image" />
+              <p>Product discovery and building what matters</p>
+            </div>
+            <div class="newsletter__details-item">
+              <img src="./assets/images/icon-list.svg" alt="Icon list image" />
+              <p>Measuring to ensure updates are a success</p>
+            </div>
+            <div class="newsletter__details-item">
+              <img src="./assets/images/icon-list.svg" alt="Icon list image" />
+              <p>And much more!</p>
+            </div>
+          </div>
+
+          <div class="newsletter__submit">
+            <form action="" class="newsletter__submit-form" novalidate>
+              <div class="label-container">
+                <label for="email">Email address</label>
+              </div>
+              <input
+                type="email"
+                name="email"
+                value="email@company.com"
+                id="email"
+                required
+                novalidate
+                placeholder="email@company.com"
+              />
+              <button type="submit" class="newsletter__submit-button">
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Sign-up form end -->
+    <!-- Success message start -->
+    <main class="newsletter__success">
+      <section class="newsletter__success-content">
+        <img src="./assets/images/icon-success.svg" alt="Success Icon" />
+        <h1 class="newsletter__success-h1">Thanks for subscribing!</h1>
+        <p class="newsletter__success-p" aria-live="polite">
+          A confirmation email has been sent to
+          <strong>ash@loremcompany.com.</strong> Please open it and click the
+          button inside to confirm your subscription.
+        </p>
+        <button class="newsletter__success-button">Dismiss message</button>
+      </section>
+    </main>
+    <!-- Success message end -->
+  </body>
+</html>
